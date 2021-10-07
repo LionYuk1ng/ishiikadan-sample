@@ -1,0 +1,616 @@
+@charset "utf-8";
+
+@media screen and (max-width:1380px){
+  .topic-ttl{
+    font-size: 3.0rem;
+    margin-bottom: 35px;
+  }
+
+  .topic-text{
+    margin-bottom: 35px;
+  }
+}
+
+
+/* 1186 */
+@media screen and (max-width:1186px){
+
+  
+.page-text-r p,
+.page-text-c p,
+.page-text-l p{
+  margin-right: 10px;
+}
+
+
+ .topic-list{
+   flex-direction: column;
+   text-align: center;
+ }
+ .topic-list-img,
+ .topic-list-text{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .topic-list-text{
+   margin-top: 30px;
+ }
+
+
+.topic-ttl,
+.topic-text,
+.topic-btn{
+   text-align: center;
+ }
+
+ .recomend-list{
+   flex-direction: column;
+ }
+
+ .planlist{
+ display: flex;
+ margin-right: 0;
+ margin-bottom: 20px;
+ }
+
+ .planlist-box{
+   width: 100%;
+   margin-left: 20px;
+ }
+
+ .plan-ttl{
+   display: none;
+ }
+
+ .plan-ttl-sp{
+   display: block;
+   font-size: 2.0rem;
+   line-height: 3.2rem;
+   margin-top: 15px;
+ }
+
+ .plan-text{
+   display: none;
+ }
+
+ .plan-text-sp{
+   display: block;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  margin-top: 30px;
+ }
+ 
+ .access-contents{
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 800px;
+   margin-bottom: 0;
+ }
+
+ .hotel-img{
+   text-align: center;
+   margin-bottom: 20px;
+   max-width: 800px;
+   max-height: 100%;
+ }
+
+ .hotel-img img{
+   width: 100%;
+   vertical-align: bottom;
+
+ }
+
+ .access-box{
+   padding-left: 20px;
+ }
+
+ .newslist-show{
+   flex-direction: column;
+ }
+
+ .contetnts-list{
+   width: 100%;
+   box-sizing: border-box;
+ }
+ .another-contetnts-list{
+   width: 100%;
+   box-sizing: border-box;
+ }
+
+ .spa-contents{
+  padding: 90px 80px 75px 80px;
+}
+
+}
+
+/* 1148 */
+@media screen and (max-width:1148px){
+
+
+  .room-info,
+  .food-info,
+  .spa-info{
+    height: 440px;
+  }
+
+  .room-info-text,
+  .food-info-text,
+  .spa-info-text{
+    width: 100%;
+    padding-top: 120px;
+  }
+
+
+  .text-inner{
+    margin-left: 100px;
+   }
+   
+   .room-ttl,
+   .food-ttl,
+   .spa-ttl{
+    margin-top: 130px;
+    margin-bottom: 15px;
+  }
+
+  .room-text,
+  .food-text,
+  .spa-text{
+    margin-bottom: 20px;
+  }
+  
+  .room-info
+  .food-info,
+  .spa-info{
+    margin-bottom: 250px;
+}
+
+}
+
+  
+
+/* 800 */
+@media screen and (max-width:800px){
+
+ .header-right{
+  margin-left: auto;
+ }
+
+ .header-nav{
+   display: none;
+ }
+
+
+  .humburger{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    /* cursor: pointer; */
+    position: relative;   
+ 
+  }
+
+  .humburger:hover{
+    cursor: pointer;
+  }
+
+  .humburger span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 5px;
+    background: #000;
+    width: 45%;
+    z-index: 9999;
+  }
+
+  .fff span{
+    background:#FFF;
+  }
+
+
+  .top{
+    top: 15px;
+  }
+
+  .middle{
+    top: 23px;
+  }
+
+  .bottom{
+    top: 31px;
+  }
+
+  
+  .humburger.active .top{
+    top: 18px;
+    left: 18px;
+    background: #000;
+    transform: translateY(6px) rotate(-45deg);
+    width: 45%;
+  }
+
+  .humburger.active .middle{
+    opacity:0;
+  }
+
+  .humburger.active .bottom{
+    top: 30px;
+    left: 18px;
+    background: #000;
+    transform: translateY(-6px) rotate(45deg);
+    width: 45%;
+  }
+
+  #humburger-nav{
+   position: fixed;
+   z-index: 500;
+   top: -120%;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: #FFFFFF;
+   opacity: 0.9;
+   transition: all 1s;
+  }
+
+
+  #humburger-nav.panelactive{
+    top: 0;
+  }
+
+  #humburger-nav.panelactive #humberger-nav-list{
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+    /* overflow: auto; */
+
+  }
+
+  #humberger-nav ul{
+    position: absolute;
+    z-index: 500 ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+#humberger-nav-list ul li{
+  font-size: 1.6rem;
+  line-height: 4.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#humberger-nav-list ul li a{
+  display: block;
+  color: #000000;
+  
+}
+
+/* .nav-item a{
+  font-size: 1.6rem;
+  line-height: 4.2rem;
+  color: #000000;
+  display: block;
+} */
+
+  /* .nav-item{
+    text-align: center;
+    margin-bottom: 30px;
+  } */
+
+  .nav-item:first-child{
+    margin-top: 100px;
+  }
+
+  .nav-item a:hover{
+    font-weight: bold;
+  }
+
+  
+.copy{
+  position: absolute;
+  top: 50%;
+  right: 15%;
+}
+
+
+
+.section-text-spa{
+  display: none;
+}
+
+  .section-text-800{
+    display: block;
+    margin-top: 85px;
+    margin-bottom: 130px;
+    text-align: center;
+  }
+
+
+  .section-text-800 p{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #000000;
+  }
+
+
+  .reserve-btn{
+    display: inline-block;
+    background: #978F10;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    line-height: 4.8rem;
+    width: 130px;
+    height: 50px;
+
+  }
+}
+
+
+/* 600 */
+@media  screen and (max-width:600px){
+
+  .swiper-slide img{
+    object-fit: cover;
+  
+  }
+
+  .modal{
+   width: 80%;
+   padding: 20px;
+  }
+
+.page-top{
+  padding: 60px 0 100px 0;
+}
+  .page-top-inner{
+   flex-direction: column;
+   padding: 0 20px 0 20px;
+
+ }
+
+ .page-ttl{
+   writing-mode: horizontal-tb;
+   margin-bottom: 50px;
+ }
+
+ .ttl-right{
+   text-indent: 0;
+   margin-left: 0;
+ }
+
+ .ttl-left{
+   margin-left: 25px;
+ }
+
+ .page-text-r,
+.page-text-c,
+.page-text-l{
+  writing-mode: horizontal-tb;
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.page-text-r p,
+.page-text-c p,
+.page-text-l p{
+  margin-bottom: 10px;;
+}
+.hotelttl{
+  writing-mode: horizontal-tb;
+  margin-right: 20px;
+}
+
+#plan{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.planlist{
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.planlist img{
+ width: 100%;
+}
+
+.planlist-box{
+  margin-left: 0;
+}
+
+.section-text p{
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+
+.spa-info-text{
+  padding-top: 0px;
+  width: 100%;
+  height: 400px;
+  top: 200px;  
+}
+
+.food-info-text{
+  height: 300px;
+}
+
+.room-info-text{
+  padding-top: 0px;
+  width: 100%;
+  height: 400px;
+  top: 120px;  
+}
+
+.room-info,
+.food-info,
+.spa-info{
+  flex-direction: column;
+}
+
+.room-info-img,
+.food-info-img,
+.spa-info-img{
+  width: 100%;
+}
+
+.room-info-img img,
+.food-info-img img,
+.spa-info-img img{
+ width: 100%;
+ height: auto;
+ top: -50px;
+
+}
+
+.text-inner{
+ padding: 20px;
+ margin-left: 0;
+ }
+ 
+ .food-ttl h3{
+  font-size: 2.2rem;
+  line-height: 3.0rem;
+ }
+ 
+
+ .food-text p{
+   font-size: 1.2rem;
+   line-height: 2.4rem;
+}
+
+.spa-contents{
+  padding: 90px 0 75px 0;
+}
+
+}
+
+/* 480 */
+@media screen and (max-width:480px){
+  .header-left{
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .header-left img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .reserve-btn{
+    width: 110px;
+    height: 45px;
+  
+  }
+  .reserbe-btn{
+    vertical-align: top;
+  }
+
+  .room-info,
+  .spa-info{
+    margin-bottom: 100px;
+  }
+
+.room-info-text,
+.spa-info-text{
+    height: 400px;
+    top: 60px;  
+  }
+
+  .food-info-text{
+    height: 400px;
+    top: -50px;
+  }
+
+  .section-text{
+    display: none;
+  }
+
+  .section-text-sp{
+    display: block;
+    margin-top: 85px;
+    margin-bottom: 130px;
+    text-align: center;
+  }
+
+  
+ .section-text-sp p{
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #000000;
+}
+
+}
+
+
+/* 420 */
+@media screen and (max-width:420px){
+ .page-ttl{
+    writing-mode: horizontal-tb;
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+  }
+
+  .page-text-r,
+.page-text-c,
+.page-text-l{
+  font-size: 1.20rem;
+  line-height: 2.0rem;
+}
+
+.hotelttl{
+  margin-right: 0;
+}
+.section-text p{
+  font-size: 1.0rem;
+  line-height: 2.0rem;
+}
+
+.room-info-text,
+.spa-info-text{
+  height: 400px;
+  top: 20px;  
+}
+
+.food-info-text{
+  height: 350px;
+  top: -50px;
+}
+
+.spa-info-text{
+  height: 350px;
+  top: 20px;  
+}
+
+.room-ttl h3,
+.food-ttl h3,
+.spa-ttl h3{
+  font-size: 2.0rem;
+  line-height: 2.8rem;
+ }
+ 
+ .room-text p
+ .food-text p,
+ .spa-text p{
+   font-size: 1.2rem;
+   line-height: 2.4rem;
+ }
+ 
+ .room-attention ul li{
+   font-size: 1.2rem;
+   line-height: 1.9rem;
+}
+}
+
+ 
