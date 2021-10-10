@@ -374,6 +374,9 @@ a{
   margin-bottom: 73px;
 }
 
+.topic-text-sp{
+ display: none;
+}
 
 .next-btn{
   display: inline-block;
