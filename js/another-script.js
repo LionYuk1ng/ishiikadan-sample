@@ -22,13 +22,13 @@ $('.tab').on('click',function(){
 });
 
 //  humberger
-$(".humburger").click(function(){
+$(".humburger_next").click(function(){
   $(this).toggleClass('active');
   $("#humburger-nav").toggleClass('panelactive')
 });
 
 $("#humburger-nav a").click(function(){
-  $(".humburger").removeClass('active');
+  $(".humburger_next").removeClass('active');
   $("humburger-nav").removeClass('panelactive');
 });
  

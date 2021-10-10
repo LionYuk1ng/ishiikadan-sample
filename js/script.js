@@ -21,7 +21,7 @@ $(function() {
      listitem.find('a').css('color','#FFFFFF');
      logo.css('display','block');
      $(".changesitelogo").css('display','none');
-     $(".humburger span").css('background','#fff');
+     $(".humburger span").css('background','#FFFFFF');
     
    }
  });
